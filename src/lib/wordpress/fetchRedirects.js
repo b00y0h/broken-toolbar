@@ -1,7 +1,8 @@
 const wpAppUser = process.env.WORDPRESS_APPLICATION_USERNAME
 const wpAppPass = process.env.WORDPRESS_APPLICATION_PASSWORD
 const auth = Buffer.from(`${wpAppUser}:${wpAppPass}`).toString('base64')
-const url = 'https://wordpress.wilmington.edu/wp-json/redirection/v1/redirect'
+const url =
+  'https://dev-wilmington-test-faust.pantheonsite.io/wp-json/redirection/v1/redirect'
 
 const fetchRedirects = () => {
   const options = {
@@ -45,6 +46,11 @@ const fetchRedirects = () => {
         }
         // Return the fetched items if there are no more items to fetch
         return allRedirects
+      })
+      .catch((error) => {
+        if (error.message === 'Authorization failed') {
+          return []
+        }
       })
   }
 
