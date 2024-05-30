@@ -84,27 +84,27 @@ const EabBlocksHomepageHeroSlider = (props) => {
 }
 export default EabBlocksHomepageHeroSlider
 
-EabBlocksHomepageHeroSlider.fragments = {
-  entry: gql`
-    fragment EabBlocksHomepageHeroSliderFragment on EabBlocksHomepageHeroSlider {
-      attributes {
-        backgroundColor
-        className
-        ctaOneLink
-        ctaOneText
-        ctaOneIcon
-        ctaThreeLink
-        ctaThreeText
-        ctaThreeIcon
-        ctaTwoLink
-        ctaTwoText
-        ctaTwoIcon
-        heroExtraContent
-        heroTitle
-      }
-    }
-  `,
-  key: 'EabBlocksHomepageHeroSliderFragment'
-}
+// EabBlocksHomepageHeroSlider.fragments = {
+//   entry: gql`
+//     fragment EabBlocksHomepageHeroSliderFragment on EabBlocksHomepageHeroSlider {
+//       attributes {
+//         backgroundColor
+//         className
+//         ctaOneLink
+//         ctaOneText
+//         ctaOneIcon
+//         ctaThreeLink
+//         ctaThreeText
+//         ctaThreeIcon
+//         ctaTwoLink
+//         ctaTwoText
+//         ctaTwoIcon
+//         heroExtraContent
+//         heroTitle
+//       }
+//     }
+//   `,
+//   key: 'EabBlocksHomepageHeroSliderFragment'
+// }
 
 EabBlocksHomepageHeroSlider.displayName = 'EabBlocksHomepageHeroSlider'

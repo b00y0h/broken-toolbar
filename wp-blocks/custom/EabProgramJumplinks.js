@@ -59,15 +59,15 @@ const EabProgramJumplinks = (props) => {
 
 export default EabProgramJumplinks
 
-EabProgramJumplinks.fragments = {
-  entry: gql`
-    fragment EabProgramJumplinksFragment on EabProgramJumplinks {
-      attributes {
-        jumpLinks
-      }
-    }
-  `,
-  key: `EabProgramJumplinksFragment`
-}
+// EabProgramJumplinks.fragments = {
+//   entry: gql`
+//     fragment EabProgramJumplinksFragment on EabProgramJumplinks {
+//       attributes {
+//         jumpLinks
+//       }
+//     }
+//   `,
+//   key: `EabProgramJumplinksFragment`
+// }
 
 EabProgramJumplinks.displayName = 'EabProgramJumplinks'
